@@ -37,6 +37,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: var(--default-padding);
+    z-index: 1;
 }
 
 header menu {
