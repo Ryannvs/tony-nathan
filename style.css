@@ -67,6 +67,10 @@ header li:hover {
     box-shadow: var(--default-shadow);
 }
 
+.logo-mobile{
+    display: none;
+}
+
 .login {
     height: 48px;
     width: 120px;
@@ -478,6 +482,157 @@ footer {
 
 
     .copy-right {
+        margin-bottom: 64px;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --default-padding: 0 28px;
+    }
+
+    header {
+        position: absolute;
+        left: 0;
+        top: 64px;
+        background-color: transparent;
+    }
+
+    header menu {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100vw;
+        height: 64px;
+        background-color: var(--primary-color);
+        color: white;
+        justify-content: space-evenly;
+    }
+
+    header li:hover {
+        color: var(--primary-color);
+    }
+
+    .logo-desk{
+        display: none;
+    }
+
+    .logo-mobile{
+        display: flex;
+    }
+
+    .home {
+        background-color: var(--primary-color);
+        background-size: cover;
+        grid-template-rows: none;
+        background-image: url(./img/backgroundPizza.png);
+    }
+
+    .home .container-produtos {
+        display: none;
+    }
+
+    .cardapio-item {
+        align-items: center;
+        border: none;
+    }
+
+    .cardapio-item a {
+        display: none;
+    }
+
+    .container-slogan {
+        justify-content: end;
+        flex-direction: column-reverse;
+        gap: 128px;
+        align-items: center;
+    }
+
+    .container-slogan .slogan {
+        font-size: 32px;
+        width: 100%;
+        color: white;
+    }
+
+    .container-slogan span {
+        background-color: white;
+    }
+
+    .container-slogan img {
+        display: none;
+    }
+
+    .container-produtos {
+        gap: 32px;
+    }
+
+
+    .pizza:nth-child(2),
+    .pizza:nth-child(3),
+    .pizza:nth-child(4),
+    .pizza:nth-child(5),
+    .pizza:nth-child(6) {
+        display: none;
+    }
+
+    .servicos p {
+        display: none;
+    }
+
+    .servicos-container {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .servicos-item {
+        height: 260px;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .servicos-item p {
+        width: 320px;
+    }
+
+    .contatos-container {
+        margin-top: 20px;
+        height: 400px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .contatos-container .contato-logo,
+    .contato:nth-child(3) {
+        width: 50%;
+        place-content: start;
+    }
+
+    .contato {
+        padding: 0;
+    }
+
+    .contato:nth-child(2){
+        display: none;
+    }
+
+    .contato menu {
+        flex-direction: column;
+    }
+
+    .social menu{
+        flex-direction: row;
+    }
+
+
+
+    .copy-right {
+        justify-content: center;
+        align-items: center;
+        font-weight: 300;
+        font-size: 12px;
         margin-bottom: 64px;
     }
 }
